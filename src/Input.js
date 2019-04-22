@@ -16,7 +16,7 @@ class Input extends Component {
             placeholder="Enter your message and press ENTER"
             autoFocus={true}
           />
-          <button>Send</button>
+          {/* <button>Send</button> */}
         </form>
       </div>
     );
