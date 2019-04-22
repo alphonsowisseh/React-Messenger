@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Messages from "./Messages";
 
 class App extends Component {
   
@@ -25,7 +26,7 @@ class App extends Component {
       </li>
     );
   }
-  
+
   render() {
     return (
       <div className="App">
