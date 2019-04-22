@@ -100,3 +100,9 @@ button {
   border-radius: 8px;
   margin-left: 10px;
 }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
