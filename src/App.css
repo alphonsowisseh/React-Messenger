@@ -77,15 +77,18 @@ form {
   width: 100%;
   justify-content: space-between;
   max-width: 900px;
-  margin: 0 auto 40px;
+  margin: 0 auto 0px;
 }
 
 input {
-  padding: 5px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid orangered;
-  flex-grow: 1;
+  padding: 10px;
+    font-size: 20px;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid #6494ee;
+    flex-grow: 1;
 }
 
 button {
