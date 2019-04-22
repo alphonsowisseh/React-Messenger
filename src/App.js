@@ -16,6 +16,22 @@ function randomColor() {
 }
 
 class App extends Component {
+
+  state = {
+    messages: [
+      {
+        text: "This is a test message!",
+        member: {
+          color: "blue",
+          username: "bluemoon"
+        }
+      }
+    ],
+    member: {
+      username: randomName(),
+      color: randomColor()
+    }
+  }
   
   renderMessage(message) {
     const {member, text} = message;
