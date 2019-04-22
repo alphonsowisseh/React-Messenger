@@ -27,6 +27,7 @@ class App extends Component {
   }
   constructor() {
     super();
+    
     this.drone = new window.Scaledrone("OARTFYv2INi0hZZv", {
       data: this.state.member
     });
@@ -38,11 +39,15 @@ class App extends Component {
       member.id = this.drone.clientId;
       this.setState({member});
     });
-    const room = this.drone.subscribe("observable-messenger");
+    const room = this.drone.subscribe("observable-messenger", {
+      historyCount: 100
+    });
     room.on('data', (data, member) => {
       const messages = this.state.messages;
       messages.push({member, text: data});
       this.setState({messages});
+      console.log(data);
+      console.log(member);
     });
   }
 
