@@ -6,7 +6,7 @@
 }
 
 .App-header {
-  background-color: #262626;
+  background-color: #496cad;
   overflow: visible;
   width: 100%;
   text-align: center;
@@ -63,13 +63,13 @@
   max-width: 400px;
   margin: 0;
   border-radius: 12px;
-  background-color: cornflowerblue;
+  background-color: #b7b7b7;
   color: white;
   display: inline-block;
 }
 
 .currentMember > .Message-content .text {
-  background-color: orangered;
+  background-color: cornflowerblue;
 }
 
 form {
